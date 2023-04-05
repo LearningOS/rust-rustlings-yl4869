@@ -5,8 +5,11 @@
 fn main() {
     let mut res = 42;
     let option = Some(12);
-    while let Some(x) = option {
+    for x in option {
         res += x;
     }
+    // while let Some(x) = option {
+    //     res += x;
+    // }
     println!("{}", res);
 }
